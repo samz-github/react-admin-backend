@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: username
+    password: password
+    url: jdbc:mysql://192.168.43.200:3306/testdb?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+      pattern: "%h %l %u %t %r %s %b %D"
+    basedir: ./
